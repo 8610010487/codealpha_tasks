@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styletask1.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="C:\Users\dell\Desktop\Image Gallery\pictures\picture 1.jpg" id="fullImg" >
+        <span onclick="closefullImg()">X</span>
+    </div>
+    <div class="image-gallery">
+        <img src="https://swall.teahub.io/photos/small/184-1846791_waterfall-wall-mural-wodospady-wietnam.jpg" onclick="openfullImg(this.src)">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.W0XQ4oxHUm8IAyU4W--ObAHaHa?w=3000&h=3000&rs=1&pid=ImgDetMain" onclick="openfullImg(this.src)">
+        <img src="https://5.imimg.com/data5/QZ/DY/LC/SELLER-3951255/nature-wallpaper-1000x1000.jpg" onclick="openfullImg(this.src)">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.prco2EgnmwAqyEsaiPbEQwHaJP?w=476&h=594&rs=1&pid=ImgDetMain" onclick="openfullImg(this.src)">
+        <img src="https://5.imimg.com/data5/NP/SK/MY-39177116/waterfall-wallpaper-500x500.jpg" onclick="openfullImg(this.src)">
+        <img src="https://img.freepik.com/premium-photo/nature-wallpaper-beautiful-nature-wallpaper-4k-nature-wallpapers-hd-nature-wallpaper-green-nature_722194-162.jpg?w=360" onclick="openfullImg(this.src)">
+        <img src="https://images.pexels.com/photos/1776769/pexels-photo-1776769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onclick="openfullImg(this.src)">
+        <img src="https://th.bing.com/th/id/OIP.YX-k8yV9jIRS5RQRpGJ2owAAAA?rs=1&pid=ImgDetMain" onclick="openfullImg(this.src)">
+    </div>
+    <script>
+       var fullImgBox = document.getElementById("fullImgBox");
+       var fullImg = document.getElementById("fullImg");
+
+       function openfullImg(pic) {
+        fullImgBox.style.display ="flex";
+        fullImg.src = pic;
+       }
+        function closefullImg() {
+            fullImgBox.style.display ="none";
+        }
+    </script>
+</body>
+</html>
